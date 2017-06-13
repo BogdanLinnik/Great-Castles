@@ -16,7 +16,9 @@ var castleRoutes = require("./routes/castles"),
 
 //Connectiong to database
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/castles_data');
+// mongoose.connect('mongodb://localhost/castles_data');
+mongoose.connect('mongodb://oleg:password@ds135689.mlab.com:35689/castles');
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
