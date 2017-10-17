@@ -8,7 +8,7 @@ var castleSchema = new mongoose.Schema({
     author: {
       id: {
           type: mongoose.Schema.Types.ObjectId,
-          ref: 'User'
+          ref: "User"
       },
       username: String
     },
@@ -20,4 +20,4 @@ var castleSchema = new mongoose.Schema({
     ]
 });
 
-module.exports = mongoose.model('Castle', castleSchema);
+module.exports = mongoose.model("Castle", castleSchema);
